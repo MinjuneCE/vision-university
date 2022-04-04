@@ -4,15 +4,18 @@
 
 #header {
   text-align: center;
-  font-size: 300%;
+  font-size: 200%;
 }
 
 .header2 {
   font-size: 300%;
 }
 
-.nav {
+#nav {
   margin-top: 40px;
+}
+
+.navList {
   list-style-type: none;
 }
 
