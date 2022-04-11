@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그 연습</title>
+    <style>
+        .tag {
+            margin-bottom: 15px;
+        }
+        #si {  
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Home</a>
+    <h1>로그인</h1>
+    <form method="GET" action="/login.php">
+        <div class="tag">
+            <label for="id">ID : </label>
+            <input id="id" name="id" type="text" placeholder="아이디를 적어주세요." minlength="4" required>
+        </div>
+        <div class="tag">
+            <label for="pw">PASSWORD : </label>
+            <input id="pw" name="pw" type="password" placeholder="비밀번호를 적어주세요." minlength="10" required>            
+        </div>
+        <div class="tag">
+            <label for="pw2">PASSWORD 확인 : </label>
+            <input id="pw2" name="pw2" type="password" placeholder="비밀번호를 적어주세요." minlength="10" required>            
+        </div>
+        <div class="tag">
+            <label for="birthDate">생년월일 : </label>
+            <input id="birthDate" name="birthDate" type="date">    
+        </div>
+        <div class="tag">
+            <label for="country">나라 : </label>
+            <input type="list" id="country" placeholder="나라를 선택하세요." list="countryList" required>
+            <datalist id="countryList">
+                <option value="Korea">
+                <option value="Japan">
+                <option value="China">
+                <option value="US">
+                <option value="신안(섬나라)">
+            </datalist>
+        </div>
+        <div class="tag">
+            <label for="gotoCon">가고싶은곳 : </label>
+            <input type="text" value="신안(섬나라)" readonly>
+        </div>
+        <div class="tag">
+            <label for="si">자기소개 : </label>
+            <br>
+            <textarea name="selfIntroduce" id="si" cols="30" rows="10"></textarea>
+        </div>
+        <div class="tag">
+            <p>성별</p>
+            <label for="male">남</label>
+            <input type="radio" id="male" name="sex" value="male">
+            <label for="female">여</label>
+            <input type="radio" id="female" name="sex" value="female">
+        </div>
+        <div class="tag">
+            <p>취미</p>
+            <label for="game">게임</label>
+            <input type="checkbox" id="game" name="hobby" value="game">
+            <label for="exercise">운동</label>
+            <input type="checkbox" id="exercise" name="hobby" value="exercise">
+            <label for="sleep">수면</label>
+            <input type="checkbox" id="sleep" name="hobby" value="sleep">
+        </div>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>
