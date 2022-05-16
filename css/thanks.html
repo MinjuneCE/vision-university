@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        div {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            text-align: center;
+            color: white;
+            padding-right: 10px;
+            padding-left: 10px;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        #h:hover {
+            position: relative;
+            top: 40px;
+            left: 20px;
+            background-color: green;
+        }
+
+        #k:hover {
+            position: relative;
+            top: 40px;
+            left: 20px;
+            background-color: green;
+        }
+
+        #n:hover {
+            position: relative;
+            bottom: 40px;
+            left: 20px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="../src/index.html">Home</a>
+    <h3>상대배치</h3>
+    <p>H와 K와 N 글자에 마우스를 올려보세요</p>
+    <hr>
+
+    <div>T</div>
+    <div id="h">H</div>
+    <div>A</div>
+    <div id="n">N</div>
+    <div id="k">K</div>
+    <div>S</div>
+</body>
+</html>
