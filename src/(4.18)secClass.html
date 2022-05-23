@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그연습2</title>
+</head>
+<body>
+    <a href="index.html">home</a>
+    <table border="1">
+        <tr>
+            <td colspan="2">나머지 폼 태그 연습</td>
+        </tr>
+        <tr>
+            <td>색상</td>
+            <td><input type="color" value="#FFFF00" name="color"></td>
+        </tr>
+        <tr>
+            <td>달 입력</td>
+            <td><input type="month" value="2022-04" name="month"></td>
+        </tr>
+        <tr>
+            <td>날 입력</td>
+            <td><input type="week" value="2022-W09" name="week"></td>
+        </tr>
+        <tr>
+            <td>날짜 입력</td>
+            <td><input type="date" value="2022-04-04" name="date"></td>
+        </tr>
+        <tr>
+            <td>로컬 날짜시간</td>
+            <td><input type="datetime-local" value="2022-04-04T08:30" name="dateLocal"></td>
+        </tr>
+        <tr>
+            <td>숫자 입력</td>
+            <td><input type="number" step="5" min="10" max="100" name="num"></td>
+        </tr>
+        <tr>
+            <td>몸무게 입력</td>
+            <td>
+                <input type="range" step="10" min="0" max="100" list="dl" name="weight">
+                <datalist id="dl">
+                    <option value="0"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100"></option>
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td>이메일</td>
+            <td><input type="email" placeholder="abc@gmali.com" name="email"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <form action="">
+        <fieldset>
+            <legend>회원정보</legend>
+            이메일 : <input type="text" placeholder="abc@naver.com">
+            <br>
+            주소 : <input type="text">
+            <br>
+            전화번호 : <input type="text" placeholder="000-0000-0000">
+        </fieldset>
+    </form>
+    
+</body>
+</html>

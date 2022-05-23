@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html이란?</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="includeHTML.js"></script>
+</head>
+<body>
+    <header id="header" include-html="header.html"></header>
+    <div id="grid">
+        <nav id="nav" include-html="nav.html"></nav>
+        <div id="main" include-html="html.html"></div>
+    </div>
+    <footer id="footer" include-html="footer.html"></footer>
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>
