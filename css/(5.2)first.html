@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀렉터</title>
+    <style>
+        span {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        .a {
+            color: blue;
+        }
+        #b {
+            color: red;
+            font-weight: bold;
+        }
+        #block {
+            border: 5px solid red;
+        }
+        #line {
+            display: inline;
+            border: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="../src/index.html">Home</a>
+    <h3>Web programming</h3>
+    <hr>
+    2학기 <span>학습 내용</span> 
+    <ul>
+        <li class="a">HTML5</li>
+        <li id="b">CSS</li>
+        <li class="a">JavaScript</li>
+    </ul>
+
+    <h4>블럭형과 라인형의 차이</h4>
+
+    <div id="block">
+        블럭형은 전체공간을 차지합니다
+    </div>
+    <div id="line">
+        라인형은 자신의 크기만 차지합니다
+    </div>
+</body>
+</html>
